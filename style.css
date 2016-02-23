@@ -1,0 +1,43 @@
+.navbar img, .navbar span {
+  height: 45px;
+  margin: 10px;
+}
+
+#landing {
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  background-image: url(images/landing_background.jpeg);
+  background-size: cover;
+}
+
+#next {
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  background-image: url(images/typewriter.jpeg);
+  background-size: cover;
+}
+
+#headshot {
+  border-radius: 50%;
+  width: 12.5vw;
+  margin: 12% 5% 10% 35%;
+}
+
+#introWrapper {
+  margin: 15%;
+  background-color: rgba(255,255,255,0.8);
+  height: 50vh;
+  width: 70%;
+  border: 1px solid black;
+  opacity: .9;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#introDescription {
+  margin: 10% -15% 15% 15%;
+  font-size: 2.5vh;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+}
