@@ -7,6 +7,8 @@
   <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+  <script src="js/app.js"></script>
 
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
@@ -26,8 +28,6 @@
         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
       </a>
     </div>
-
-
       <div class="navbar-collapse collapse">
         <a href="https://www.linkedin.com/in/bolducp" class="nav navbar-nav">
           <img src="images/linkedin_logo.png" alt="">
@@ -37,7 +37,7 @@
         </a>
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="">Projects</a>
+            <a href="#projects" du-smooth-scroll>Projects</a>
           </li>
           <li>
             <a href="">Resume</a>
@@ -49,7 +49,9 @@
       </div>
     </div>
   </div>
-  <div class="container" id="landing">
+
+  <!-- Landing section -->
+  <div class="container section" id="landing">
     <div class="row">
       <div class="col-md-12">
         <div id="introWrapper">
@@ -67,13 +69,153 @@
               <img id="headshot" src="images/paige.jpg" alt="">
             </div>
           </div>
+          <div class="row buttonRow" >
+            <a href="#projects" du-smooth-scroll>
+              <button type="button" class="btn btn-default btn-lg">
+                Projects
+                <br>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container" id="projects">
+
+  <!-- Projects section -->
+  <div class="container section" id="projects">
+    <a name="projects"></a>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row buttonRow" >
+          <a href="#moreProjects" du-smooth-scroll>
+            <button type="button" class="btn btn-default btn-lg moreBtn">
+              More
+              <br>
+              <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            </button>
+          </a>
+        </div>
+      </div>
   </div>
-  <div class="container" id="next">
+
+
+  <!-- More projects section -->
+  <div class="container section" id="moreProjects">
+
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row buttonRow" >
+          <a href="#blog" du-smooth-scroll>
+            <button type="button" class="btn btn-default btn-lg moreBtn">
+              Blog
+              <br>
+              <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            </button>
+          </a>
+        </div>
+      </div>
+  </div>
+
+<!-- Blog section -->
+  <div class="container section" id="blog">
+
+
   </div>
 
 </div>

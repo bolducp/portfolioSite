@@ -1,22 +1,27 @@
+body {
+  font-family: 'Josefin Slab', serif;
+  font-size: 18px;
+}
+
 .navbar img, .navbar span {
   height: 45px;
   margin: 10px;
 }
 
 #landing {
-  height: 100vh;
-  width: 100vw;
-  padding: 0px;
   background-image: url(images/landing_background.jpeg);
-  background-size: cover;
 }
 
 #next {
-  height: 100vh;
-  width: 100vw;
-  padding: 0px;
   background-image: url(images/typewriter.jpeg);
-  background-size: cover;
+}
+
+#projects {
+  background-color: #8C7370;
+}
+
+#moreProjects {
+  background-color: #DFCCBA;
 }
 
 #headshot {
@@ -40,4 +45,61 @@
   font-size: 2.5vh;
   font-family: 'Josefin Slab', serif;
   font-weight: bold;
+}
+
+.section .buttonRow button {
+  margin-top: 5%;
+  background: none;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+.section .buttonRow .moreBtn {
+  margin-top: -2px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+.section .buttonRow button:hover, .section .buttonRow .moreBtn:hover {
+  background-color: rgba(255,255,255,0.6);
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  background-size: cover;
+}
+
+.buttonRow {
+  text-align: center;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.8);
+  margin: 10%;
+}
+
+.card-image > img {
+  height: 170px;
+  position: relative;
+  width: 100%;
+}
+
+
+.card .card-image .card-title {
+    color: black;
+    position: relative;
+    padding: 20px;
+}
+
+.card .card-content {
+    padding: 20px;
+    border-radius: 0 0 2px 2px;
+}
+
+.card .card-action {
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 20px;
 }
