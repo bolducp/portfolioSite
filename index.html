@@ -11,6 +11,7 @@
   <script src="js/app.js"></script>
 
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 
@@ -24,7 +25,7 @@
     <div class="container">
 
     <div class="navbard-header">
-      <a href="/" class="navbar-brand">
+      <a href="#landing" du-smooth-scroll class="navbar-brand">
         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
       </a>
     </div>
@@ -150,7 +151,8 @@
 
   <!-- More projects section -->
   <div class="container section" id="moreProjects">
-
+  <br>
+  <br>
     <div class="row">
         <div class="col-md-4">
           <div class="card">
@@ -201,9 +203,9 @@
         </div>
 
         <div class="row buttonRow" >
-          <a href="#blog" du-smooth-scroll>
+          <a href="#aboutMe" du-smooth-scroll>
             <button type="button" class="btn btn-default btn-lg moreBtn">
-              Blog
+              About Me
               <br>
               <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
             </button>
@@ -211,6 +213,40 @@
         </div>
       </div>
   </div>
+
+  <!-- About Me section -->
+    <div class="container section" id="aboutMe">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="aboutMeWrapper">
+            <div class="row">
+              <div class="col-m-12">
+                <h2>My Story</h2>
+                <br>
+                <p id="bio">
+                  After nearly six years of studying literature and theory in college and grad school, I discovered coding in February 2015 and decided to change what I was doing with my life.<br><br>
+
+                  I left my PhD program and began to devote all of my waking time to studying software and web development. I self-studied Python for 4 months (August - November 2015) and then moved to California to attend <a href="www.codinghouse.co">Coding House</a>-- a fully-immersive full stack JavaScript bootcamp. <br><br>
+                  I love software and web development because they are expansive, constantly developing fields in which there’s always more to discover. Even more inspiring to me, though, is the potential to work with other developers to make a real, tangible difference in the world through programming. I'm serious about learning foundational best practices and driven to work hard and improve. 
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row buttonRow moreBtn" >
+        <a href="#blog" du-smooth-scroll>
+          <button type="button" class="btn btn-default btn-lg">
+            Blog
+            <br>
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+          </button>
+        </a>
+      </div>
+
+    </div>
+
 
 <!-- Blog section -->
   <div class="container section" id="blog">

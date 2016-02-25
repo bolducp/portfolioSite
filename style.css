@@ -3,6 +3,10 @@ body {
   font-size: 18px;
 }
 
+h2, h3 {
+  text-align: center;
+}
+
 .navbar img, .navbar span {
   height: 45px;
   margin: 10px;
@@ -24,6 +28,10 @@ body {
   background-color: #DFCCBA;
 }
 
+#aboutMe {
+  background-image: url(images/desk.jpeg);
+}
+
 #headshot {
   border-radius: 50%;
   width: 12.5vw;
@@ -36,15 +44,27 @@ body {
   height: 50vh;
   width: 70%;
   border: 1px solid black;
-  opacity: .9;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
 }
+
+#aboutMeWrapper {
+  margin: 8% 10% 0 10%;
+  background-color: rgba(255,255,255,0.9);
+  height: 60vh;
+  width: 75%;
+  border: 1px solid black;
+}
+
 
 #introDescription {
   margin: 10% -15% 15% 15%;
   font-size: 2.5vh;
   font-family: 'Josefin Slab', serif;
   font-weight: bold;
+}
+
+#bio {
+  margin: 0 5%;
+  font-size: 2.5vh;
 }
 
 .section .buttonRow button {
@@ -86,7 +106,6 @@ body {
   position: relative;
   width: 100%;
 }
-
 
 .card .card-image .card-title {
     color: black;
